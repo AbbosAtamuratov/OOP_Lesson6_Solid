@@ -1,16 +1,18 @@
 package solid;
 
+import solid.lsp.Quad;
 import solid.lsp.Rectangle;
 
 public class ViewShape {
-    private Rectangle rectangle;
 
-    public ViewShape(Rectangle rectangle) {
-        this.rectangle = rectangle;
+    Quad q;
+
+    public ViewShape(Quad q) {
+        this.q = q;
     }
 
     public void showArea() {
         System.out.print("Площадь прямоугольника равна:");
-        System.out.println(rectangle.getArea());
+        System.out.println(q.getArea());
     }
 }

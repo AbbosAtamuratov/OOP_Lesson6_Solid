@@ -1,6 +1,6 @@
 package solid.lsp;
 
-public class Rectangle {
+public class Rectangle implements Quad{
     private int sideA;
     private int sideB;
 
@@ -25,6 +25,7 @@ public class Rectangle {
         this.sideB = sideB;
     }
 
+    @Override
     public int getArea() {
         return sideA * sideB;
     }

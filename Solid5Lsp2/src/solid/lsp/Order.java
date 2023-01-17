@@ -1,16 +1,10 @@
 package solid.lsp;
 
-public class Order {
-    private int price;
-    private int qnt;
-
-    public Order(int qnt, int price) {
-        this.price = price;
-        this.qnt = qnt;
-    }
+public class Order extends ValidOrder{
+    public Order(int qnt, int price) { super(qnt, price); }
 
     public int getAmount() {
-        return qnt * price;
+        return super.getQnt() * super.getPrice();
     }
 
     @Override

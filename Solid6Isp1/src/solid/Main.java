@@ -11,8 +11,8 @@ public class Main {
         internetService.payWebMoney(10);
 
         TerminalPaymentService terminalService = new TerminalPaymentService();
-        terminalService.payWebMoney(10);
         terminalService.payCreditCard(10);
-        terminalService.payPhoneNumber(10);
+        terminalService.payCreditCard(10);
+        terminalService.payCreditCard(10);
     }
 }

@@ -7,7 +7,7 @@ public class Persister{
 	
 	public void save(){
 		System.out.println("Save user: " + user.getName());
-	}
+	} // перетащили из юзера
 
 	public void report(){
 		System.out.println("Report for user: " + user.getName());
